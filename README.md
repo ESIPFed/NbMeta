@@ -3,31 +3,40 @@ As of August 2018, there are over [2.5 Million jupyter notebooks on GitHub](http
 The code and text in these notebooks form an important body of knowledge of
 research, practice, and pedagogy. Unfortunately, it is very difficult to find
 notebooks that might meet a particular need due to a complete lack of metadata
-associated with these resources.
+associated with these resources and with their exponential growth it is becoming
+harder.
 
-There has been  significant work done on representing software as searchable,
-citable resources. We believe that it is to create automated metadata
-extraction tools for Jupyter notebooks that would allow us to imply useful
-metadata simply by looking at files that are exposed in notebooks' GitHub
-repos.
+There has been significant work done on representing software and
+research code as searchable, citable resources. (cite force11 and codemeta).  
+
+We can leverage this work to inform the concept choices for notebook metadata
+records. Since there is already a large corpus of publicly available notebooks,
+and there is inherent difficulty in getting content creators to adopt and follow
+conventions consistently, we believe that a good first step is to develop
+automated metadata extraction tools for Jupyter notebooks in public GitHub
+repos. This implied metadata can be leveraged for search and discovery of
+relevant and useful notebooks.
 
 At the ESIP Summer 2018 meeting, collaborators in this repo proposed a project
 to pilot work on populating a  database with metadata automatically extracted
 from Jupyter notebooks on GitHub. This project was awarded a
 [FUNding Friday](http://wiki.esipfed.org/index.php/FUNding_Friday_Projects)
-grant.
+ grant.
 
 ## Deliverables
 By the Winter 2019 ESIP meeting we propose to demonstrate the following outcomes
 from this project:
-1. A metadata repository based on existing software or a simple solution built
-on top of Mongo DB
-2. A workflow for querying the GitHub API to find Jupyter Notebooks
-3. Initial code to transform GitRepo account info into DataCite metadata
-4. Initial code to transform a Jupyter notebook into CodeMeta metadata
-5. Some initial code to extract more meaning from the Jupyter Notebook, the
-repo's README, `requirements.txt`, `environment.yml`, `apt.txt`, etc
-6. A blog posting on our experience and suggestions for next steps.
+1. A workflow for querying the GitHub API to find public repositories containing
+Jupyter Notebooks
+2. Initial code to transform Git Repo account info into CodeMeta Author
+properties
+3. Publish a JSON-LD template and example records for proof of concept  
+metadata, demonstrating essential notebook metadata for citation and access and
+a more complete record focused on use and understanding
+4. A metadata repository based on existing software or a simple solution built
+on top of Mongo DB containing an example collection of metadata records
+5. Presentation/poster during the Winter ESIP Meeting.
+
 
 ## Follow Along
 Please visit our project
