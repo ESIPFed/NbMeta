@@ -1,4 +1,9 @@
 {
   "git-user": "<<Your GitHub username>>",
-  "git-password": "<< GitHub password >>"
+  "git-password": "<< GitHub password >>",
+  "mongo-host": "<<hostname>",
+  "mongo-port": 27017,
+  "mongo-user": "nbmeta",
+  "mongo-password": "<<Mongo User Password>>",
+  "mongo-db": "nbmeta"
 }

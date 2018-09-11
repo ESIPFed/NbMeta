@@ -21,7 +21,10 @@ for content in search_result[0:3]:
     print(repo)
     print(file.download_url)
 
-    urllib.request.urlretrieve(file.download_url, "file.name")
+    with urllib.request.urlopen(file.download_url) as url:
+        data = json.loads(url.read().decode())
+        print(data)
+
 
     for commit in commits:
         print("repo owner: %s  commiter: %s  author:%s "%(repo.owner, commit.committer, commit.author))
