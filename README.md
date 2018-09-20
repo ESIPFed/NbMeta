@@ -2,7 +2,7 @@
 As of August 2018, there are over [2.5 Million jupyter notebooks on GitHub](http://nbviewer.jupyter.org/github/parente/nbestimate/blob/master/estimate.ipynb).
 The code and text in these notebooks form an important body of knowledge of
 research, practice, and pedagogy. Unfortunately, it is very difficult to find
-notebooks that might meet a particular need due to a complete lack of metadata
+notebooks that might meet a particular need due to a complete z lack of metadata
 associated with these resources and with their exponential growth it is becoming
 harder.
 
