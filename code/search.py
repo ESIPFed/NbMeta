@@ -22,13 +22,13 @@ collection = db["notebooks"]
 search_result = g.search_code("ipynb", extension="ipynb")
 print(search_result.totalCount)
 
-for content_file in search_result[0:30]:
+for content_file in search_result[0:50]:
     with urllib.request.urlopen(content_file.download_url) as url:
         notebook = json.loads(url.read().decode('utf-8-sig'))
 
-    foo = {"repository":content_file.repository.full_name,
-                      "path": content_file.path,
+    foo = {"repository": content_file.repository.full_name,
+           "path": content_file.path,
+           "sha": content_file.sha,
            "notebook": notebook}
 
     collection.insert(foo)
-
