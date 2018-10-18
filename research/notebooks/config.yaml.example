@@ -1,0 +1,8 @@
+db: 
+    'bonmon.db.org'
+creds:
+    username: 
+        'bongomongo'
+    password: 'mongobongo'
+    authSource: 'source-db-to-auth-against'
+    authMechanism: 'SCRAM-SHA-1'
